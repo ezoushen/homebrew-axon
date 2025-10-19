@@ -15,13 +15,9 @@ class Axon < Formula
   license "ISC"
   version "0.1.0"
 
-  # Dependencies
-  depends_on "yq"
-  depends_on "awscli"
-  depends_on "docker"
-
-  # Optional dependencies
-  uses_from_macos "openssh"
+  # Runtime requirements (not installed by Homebrew)
+  # These are checked by `axon setup local` command
+  # Users should install: yq, awscli, docker, node, npm, decomposerize
 
   def install
     # Install all files to libexec
@@ -44,13 +40,13 @@ class Axon < Formula
 
       Next steps:
         1. Verify installation: axon --version
-        2. Setup local machine: axon setup local
-        3. Initialize config: axon init-config --interactive
+        2. Check required tools: axon setup local
+        3. Install missing tools (if any):
+             brew install yq awscli docker node
+             npm install -g decomposerize
+        4. Initialize config: axon init-config --interactive
 
-      Required tools (install separately):
-        - Node.js and npm (for decomposerize)
-          brew install node
-          npm install -g decomposerize
+      The `axon setup local` command will check for all required tools.
 
       Documentation: https://github.com/ezoushen/axon
     EOS
