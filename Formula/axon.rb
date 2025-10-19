@@ -11,7 +11,7 @@ class Axon < Formula
   desc "Zero-downtime deployment orchestration for Docker + nginx"
   homepage "https://github.com/ezoushen/axon"
   url "https://github.com/ezoushen/axon/archive/refs/tags/v0.1.3.tar.gz"
-  sha256 "dea515b14f1d43030f9aa2f56e246c19c7403af58df8f31ca77f12c62e20a7e8"  # Generate with: shasum -a 256 v0.1.0.tar.gz
+  sha256 "2cfa785172261979de633849677c308c326ee3c4da4e26b081ce1161f8b14ec3"  # Generate with: shasum -a 256 v0.1.0.tar.gz
   license "ISC"
   version "0.1.3"
 
