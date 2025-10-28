@@ -44,9 +44,9 @@ class Axon < Formula
         3. Install missing tools (if any):
              brew install yq awscli docker node
              npm install -g decomposerize
-        4. Initialize config: axon init-config --interactive
+        4. Initialize config: axon config init --interactive
 
-      The `axon setup local` command will check for all required tools.
+      The `axon install local` command will check for all required tools.
 
       Documentation: https://github.com/ezoushen/axon
     EOS
