@@ -10,10 +10,10 @@
 class Axon < Formula
   desc "Zero-downtime deployment orchestration for Docker + nginx"
   homepage "https://github.com/ezoushen/axon"
-  url "https://github.com/ezoushen/axon/archive/refs/tags/v0.8.3.tar.gz"
-  sha256 "2a23da9f7415f85d95361daedfa6095630cb514a082a56d11a264c3bb4c99111"  # Generate with: shasum -a 256 v0.1.0.tar.gz
+  url "https://github.com/ezoushen/axon/archive/refs/tags/v0.8.4.tar.gz"
+  sha256 "98a971882b7f839958b182ff32512020d6220feb1444f55c03184f2d6c1d3a15"  # Generate with: shasum -a 256 v0.1.0.tar.gz
   license "ISC"
-  version "0.8.3"
+  version "0.8.4"
 
   # Runtime requirements (not installed by Homebrew)
   # These are checked by `axon setup local` command
